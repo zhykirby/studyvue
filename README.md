@@ -1,29 +1,7 @@
 # studyvue
 
-## Project setup
-```
-npm install
-```
+## 啊 学习vue 累了
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 做的是mobile端的 学的是mint-ui
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 但是为啥我进不去mint-ui官网呢
