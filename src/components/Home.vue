@@ -38,15 +38,15 @@ export default {
   data(){
     return{
       modules:[{
-        title:'学习吗？',className:'study-img',route:{name:'home'}
+        title:'学习吗？',className:'study-img',route:{name:'Home'}
       },{
-        title:'学个锤子',className:'study-ass',route:{name:'home'}
+        title:'学个锤子',className:'study-ass',route:{name:'Home'}
       },{
-        title:'学到傻了',className:'study-silly',route:{name:'home'}
+        title:'学到傻了',className:'study-silly',route:{name:'Home'}
       },{
-        title:'我不学了',className:'study-shit',route:{name:'home'}
+        title:'我不学了',className:'study-shit',route:{name:'Home'}
       },{
-        title:'还是得学',className:'study-time',route:{name:'home'}
+        title:'还是得学',className:'study-time',route:{name:'Home'}
       },
       ]
     }
