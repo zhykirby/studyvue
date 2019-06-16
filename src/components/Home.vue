@@ -16,15 +16,16 @@
         </mt-swipe-item>
       </mt-swipe>
     </div>
+
     <div class="flex">
-      <ul class="flex">
-        <li v-for="(module,index) in modules" :key="index">
+      <my-ul class="flex">
+        <my-li v-for="(module,index) in modules" :key="index">
           <router-link :to="module.route">
             <span :class="module.className"></span>
             <div>{{module.title}}</div>
           </router-link>
-        </li>
-      </ul>
+        </my-li>
+      </my-ul>
     </div>
   </div>
 </template>
