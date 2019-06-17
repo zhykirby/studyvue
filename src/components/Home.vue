@@ -39,7 +39,7 @@ export default {
   data(){
     return{
       modules:[{
-        title:'学习吗？',className:'study-img',route:{name:'Home'}
+        title:'学习吗？',className:'study-img',route:{name:'Dw'}
       },{
         title:'学个锤子',className:'study-ass',route:{name:'Home'}
       },{

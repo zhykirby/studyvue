@@ -16,8 +16,10 @@ Vue.use(Installer);
 //注册全局组件
 import MyUL from './components/common/MyUL';
 import MyLi from './components/common/MyLi';
+import MyHeader from './components/common/MyHeader';
 Vue.component(MyUL.name,MyUL);
 Vue.component(MyLi.name,MyLi);
+Vue.component(MyHeader.name,MyHeader);
 
 Vue.prototype.$axios = Axios;
 

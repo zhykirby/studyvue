@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '../components/Home';
-import Book from '../components/Book.vue';
-import List from '../components/List.vue';
-import User from '../components/User.vue';
+import Book from '../components/Book/Book';
+import List from '../components/List/List';
+import User from '../components/User/User';
+import Dw from '../components/IoT/Dw';
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
             path:'/user',
             name:'User',
             component:User
+        },
+        {
+            path:'/IoT/Dw',
+            name:'Dw',
+            component:Dw
         }
     ]
 });
