@@ -21,7 +21,25 @@ Vue.component(MyUL.name,MyUL);
 Vue.component(MyLi.name,MyLi);
 Vue.component(MyHeader.name,MyHeader);
 
+//时间过滤器
+import Moment from 'moment';
+Vue.filter('convertTime',function(data,formatStr){
+  return Moment(data).format(formatStr);
+});
+
 Vue.prototype.$axios = Axios;
+//拦截器
+Axios.interceptors.request.use(function(config){
+  MintUI.Indicator.open({
+    text:'转圈圈，转圈圈……',
+    spinnerType:'fading-circle'
+  });
+  return config;
+});
+Axios.interceptors.response.use(function(response){
+  MintUI.Indicator.close();
+  return response;
+});
 
 new Vue({
   render: h => h(App),
