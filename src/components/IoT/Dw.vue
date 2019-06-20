@@ -33,7 +33,7 @@ export default {
         return{
             title:'校考列表',
             courses:[{
-                title:'物联网定位技术',route:{name:'User'},picurl:require('../../../static/image/list1.png'),time:'2019.6.24'
+                title:'物联网定位技术',route:{name:'Preview'},picurl:require('../../../static/image/list1.png'),time:'2019.6.24'
             },
             {
                 title:'物联网工程规划与设计',route:{name:'User'},picurl:require('../../../static/image/list2.png'),time:'2019.6.27'
