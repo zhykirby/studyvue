@@ -7,11 +7,13 @@ import 'mint-ui/lib/style.css';
 import router from '../src/router';
 import Axios from 'axios';
 import Installer from '@/plugins/installer';
+import VuePreview from 'vue-preview';
 
 Vue.config.productionTip = false;
 Vue.use(MintUI);
 //Vue.use(ElementUI);
 Vue.use(Installer);
+Vue.use(VuePreview);
 
 //注册全局组件
 import MyUL from './components/common/MyUL';

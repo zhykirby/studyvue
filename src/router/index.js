@@ -5,6 +5,7 @@ import Book from '../components/Book/Book';
 import List from '../components/List/List';
 import User from '../components/User/User';
 import Dw from '../components/IoT/Dw';
+import Preview from '@/components/IoT/Preview';
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
             path:'/IoT/Dw',
             name:'Dw',
             component:Dw
+        },
+        {
+            path:'/IoT/Preview',
+            name:'Preview',
+            component:Preview
         }
     ]
 });
