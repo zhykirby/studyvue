@@ -25,8 +25,12 @@ Vue.component(MyHeader.name,MyHeader);
 
 //时间过滤器
 import Moment from 'moment';
+Moment.locale('zh-ch')
 Vue.filter('convertTime',function(data,formatStr){
   return Moment(data).format(formatStr);
+});
+Vue.filter('fromTime',function(time){
+  return Moment(time).fromNow();
 });
 
 Vue.prototype.$axios = Axios;
