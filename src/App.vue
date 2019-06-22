@@ -2,7 +2,10 @@
   <div id="app">
     <mt-header title="学习了吗？"></mt-header>
     <div class="to-fixed">
-      <router-view></router-view>
+      <transition name='fade' mode='out-in'>
+        <router-view></router-view>
+      </transition>
+      
     </div>
     <mt-tabbar class="fixed" v-model="selected">
       <mt-tab-item id="Home">
@@ -44,6 +47,12 @@ export default {
 </script>
 
 <style scoped>
+.fade-enter-active,.fade-leave-active{
+  transition: opacity .5s;
+}
+.fade-enter,.fade-leave-to{
+  opacity: 0;
+}
 header{width: 100vw;z-index: 999;position: fixed;}
 .fixed{position: fixed;}
 .to-fixed{padding-top:40px;}

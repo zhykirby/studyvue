@@ -8,6 +8,7 @@ import router from '../src/router';
 import Axios from 'axios';
 import Installer from '@/plugins/installer';
 import VuePreview from 'vue-preview';
+import store from '@/store/index';
 
 Vue.config.productionTip = false;
 Vue.use(MintUI);
@@ -45,5 +46,6 @@ Axios.interceptors.response.use(function(response){
 
 new Vue({
   render: h => h(App),
-  router
+  router,
+  store
 }).$mount('#app');
